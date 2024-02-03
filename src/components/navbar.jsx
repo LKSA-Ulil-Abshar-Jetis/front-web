@@ -57,16 +57,14 @@ export default function Navbar() {
               </button>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center">
-                <Image
-                  src="/logo.svg"
-                  alt="Logo Panti"
-                  width={50}
-                  height={50}
-                  priority
-                />
-              </div>
-              <div className="hidden sm:ml-6 sm:block">
+              <Image
+                src="/logo.svg"
+                alt="Logo Panti"
+                width={50}
+                height={50}
+                priority
+              />
+              <div className="flex flex-grow sm:ml-6 justify-center items-center">
                 <div className="flex space-x-4">
                   <a
                     href="/"
