@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="container m-auto">
+      <section className="w-6/12 m-auto">
         <h1 className="font-bold text-4xl text-center pb-4">Kontak Kami</h1>
         <div className="grid grid-cols-2 gap-4">
           <div className="font-bold">
