@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import contact from "@/data/kontak";
 import { FaWhatsapp } from "react-icons/fa";
+import Donation from "@/components/donation";
 
 export default function Contact() {
-
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${contact.phoneNumber}`, "_blank");
   };
@@ -31,7 +31,7 @@ export default function Contact() {
               onClick={handleWhatsAppClick}
             >
               <FaWhatsapp size={20} className="mr-2" />
-              <h6>{contact.phoneNumber}</h6>
+              <h6>{contact.getNationalPhoneNumber()}</h6>
             </div>
           </div>
           <iframe
@@ -45,6 +45,7 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+        <Donation />
       </section>
     </>
   );

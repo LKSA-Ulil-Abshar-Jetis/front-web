@@ -2,6 +2,7 @@
 
 import fetcher from "@/libs/fetcher";
 import useSWR from "swr";
+import Donation from "@/components/donation";
 
 export default function Home() {
   // const { data, error, isLoading } = useSWR(
@@ -46,6 +47,7 @@ export default function Home() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+        <Donation />
       </main>
     </>
   );
